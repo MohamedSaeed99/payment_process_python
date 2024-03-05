@@ -1,10 +1,13 @@
 import uvicorn
 from fastapi import FastAPI
-from routers import items
+from routers import products, checkout
+from dotenv import load_dotenv
 
+load_dotenv()
 app = FastAPI()
 
-app.include_router(items.router)
+app.include_router(products.router)
+app.include_router(checkout.router)
 
 @app.get("/healthcheck")
 async def root():

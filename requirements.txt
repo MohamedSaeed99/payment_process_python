@@ -1,2 +1,5 @@
 fastapi
 uvicorn[standard]
+stripe
+requests
+python-dotenv
