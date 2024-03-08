@@ -1,7 +1,7 @@
 import json
 import os
 import stripe
-from fastapi import APIRouter, HTTPException, Request, responses
+from fastapi import APIRouter, responses
 
 router = APIRouter(
     prefix="/checkout",
